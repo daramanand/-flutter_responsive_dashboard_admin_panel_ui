@@ -77,7 +77,7 @@ class BarGraphCard extends StatelessWidget {
                       barGroups: _chartGroups(
                           points: data[i].graph, color: data[i].color),
                       borderData: FlBorderData(border: const Border()),
-                      gridData: FlGridData(show: false),
+                      gridData: const FlGridData(show: false),
                       titlesData: FlTitlesData(
                         bottomTitles: AxisTitles(
                             sideTitles: SideTitles(
@@ -95,11 +95,11 @@ class BarGraphCard extends StatelessWidget {
                             );
                           },
                         )),
-                        leftTitles: AxisTitles(
+                        leftTitles: const AxisTitles(
                             sideTitles: SideTitles(showTitles: false)),
-                        topTitles: AxisTitles(
+                        topTitles: const AxisTitles(
                             sideTitles: SideTitles(showTitles: false)),
-                        rightTitles: AxisTitles(
+                        rightTitles: const AxisTitles(
                             sideTitles: SideTitles(showTitles: false)),
                       ),
                     ),
@@ -118,7 +118,7 @@ class BarGraphCard extends StatelessWidget {
               BarChartRodData(
                 toY: point.y,
                 width: 12,
-                color: color.withOpacity(point.y.toInt() > 4 ? 1 : 0.4),
+                color: color.withValues(alpha: point.y.toInt() > 4 ? 1 : 0.4),
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(3.0),
                   topRight: Radius.circular(3.0),

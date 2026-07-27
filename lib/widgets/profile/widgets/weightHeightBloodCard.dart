@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/widgets/custom_card.dart';
 
@@ -5,7 +6,6 @@ class WeightHeightBloodCard extends StatelessWidget {
   const WeightHeightBloodCard({
     super.key,
   });
-
   @override
   Widget build(BuildContext context) {
     return CustomCard(
@@ -13,9 +13,9 @@ class WeightHeightBloodCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          details("Weight", "53kg"),
-          details("Height", "162cm"),
-          details("Blood Type", "O+"),
+          details("Weight", "65kg"),
+          details("Height", "165cm"),
+          details("Blood Type", "A+"),
         ],
       ),
     );

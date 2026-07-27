@@ -9,6 +9,7 @@ class Menu extends StatefulWidget {
   const Menu({super.key, required this.scaffoldKey});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MenuState createState() => _MenuState();
 }
 
@@ -70,6 +71,7 @@ class _MenuState extends State<Menu> {
                             horizontal: 13, vertical: 7),
                         child: SvgPicture.asset(
                           menu[i].icon,
+                          // ignore: deprecated_member_use
                           color: selected == i ? Colors.black : Colors.grey,
                         ),
                       ),

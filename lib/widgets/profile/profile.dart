@@ -24,16 +24,16 @@ class Profile extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height:   50,
+                height:   20,
               ),
               Image.asset(
-                "assets/images/avatar.png",
+                "assets/images/ad1.png",
               ),
               const SizedBox(
-                height: 15,
+                height: 5,
               ),
               const Text(
-                "Summer",
+                "AD",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
               ),
               const SizedBox(
